@@ -46,13 +46,24 @@ header ul li a{
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 header ul li a:hover{
     color: blue;
     transition: .0.5s;
 }
 
+.login a {
+     display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background:#14bae4;
+    color: #000;
+    border-radius: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
 .content {
     position: relative;
     width: 100%;
@@ -91,12 +102,13 @@ header ul li a:hover{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background:#ffe926;
+    background:#14bae4;
     color: #000;
-    border-radius: 40px;
+    border-radius: 10px;
     font-weight: 800;
     letter-spacing: 1px;
     text-decoration: none;
+
 }
 
 .content .image {

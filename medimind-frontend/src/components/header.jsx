@@ -9,7 +9,6 @@ const Header = ( ) => {
         <header>
             <a href="#" class="logo">
                 <img src={Logo} alt="logo" />
-<h3>MediMind</h3>
             </a>
 
             <ul>
@@ -18,7 +17,10 @@ const Header = ( ) => {
                 <li><a href="#">SERVICES</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
-         </header>
+            <div className="login">
+            <a href="about">LOGIN</a>
+        </div>
+            </header>
          <div className="content">
         <div className="box">
             <h2>Get access to primary <span>  health care</span> anywhere you are!</h2>
@@ -26,7 +28,8 @@ const Header = ( ) => {
              Healthy People 2030 focuses on improving health care quality and making sure
              all people get the health care services they need. Helping health care
              providers communicate more effectively can help improve health and well-being.</p>
-             <a href="about">What we Offer</a>
+             <a href="about">Outline Button</a>
+
              </div>
              <div className="image">
 
