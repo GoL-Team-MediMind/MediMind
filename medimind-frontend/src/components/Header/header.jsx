@@ -7,8 +7,6 @@ import shield from "../../assets/shield.png"
 import targeting from "../../assets/targeting.png"
 import puzzle from "../../assets/puzzle.png"
 import medical from "../../assets/medical.png"
-import dots from "../../assets/dots.png"
-import bg from "../../assets/bg.jpg"
 import lan1 from "../../assets/lan1.jpg"
 import lan2 from "../../assets/lan2.jpg"
 import lan3 from "../../assets/lan3.jpg"
@@ -157,6 +155,8 @@ const Header = ( ) => {
 
 </div></div>
             </section>
+
+            
             </>
     )
 }

@@ -74,6 +74,10 @@ header ul li a:hover{
     letter-spacing: 1px;
     text-decoration: none;
 }
+.login a:hover{
+    background-color:#00518F;
+    
+}
 .content {
     position: relative;
     width: 100%;
@@ -254,7 +258,7 @@ border-color: #0078D3;
 .info img{
   margin-bottom: 10%;
     width: 200px;
-    
+
 }
 .info p{
     margin-top: 10%;
@@ -312,6 +316,11 @@ width: 60%;
 color: white;
 border-radius: 50px;
 background-color: rgba(95, 135, 170, 0.7);
+transition: transform 0.5s ease;
+
+}
+.point1:hover {
+       transform: scale(1.1);
 }
 .point1 p{
     padding: 7%;
@@ -326,6 +335,8 @@ background-color: rgba(95, 135, 170, 0.7);
     border-radius: 50px;
     background-color: rgba(95, 135, 170, 0.7);
     margin: 5% 40%;
+    transition: transform 0.5s ease;
+
     }
     .point2 p{
         padding: 7%;
@@ -333,16 +344,25 @@ background-color: rgba(95, 135, 170, 0.7);
     .point2 img{
         padding: 7% 4%
     }
-    
+    .point2:hover {
+        transform: scale(1.1);
+    }  
 .join{
+    /* width: 100px;
+        height: 100px; */
+        background-color: blue;
+        transition: transform 0.5s ease;
     height: 500px;
     padding: 8% 8%;
     background:url("../../assets/back.jpg");
     background-position: 180%;
     background-repeat: no-repeat;
 }
+
 .join h2{
 padding-right: 40%;
+opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .join h3{
