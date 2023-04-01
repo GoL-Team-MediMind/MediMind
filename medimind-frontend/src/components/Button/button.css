@@ -1,0 +1,14 @@
+.social-list {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+}
+
+a {
+    color: black;
+    transition: transform .4s;
+ }
+
+a:hover {
+    color: rgb(209, 218, 223);
+}

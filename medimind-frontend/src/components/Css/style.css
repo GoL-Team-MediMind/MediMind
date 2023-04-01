@@ -15,6 +15,10 @@
     font-size: 1.3rem;
     margin-right:30%;
   }
+
+.logo img {
+    max-width: 45%;
+}
 .logo p{
     font-weight: 1000;
 }

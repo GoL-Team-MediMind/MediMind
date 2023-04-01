@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../../assets/logo.png"
+import Button from "../Button/button";
 
 const Footer = () => {
   return (
@@ -8,7 +9,6 @@ const Footer = () => {
        <img src={Logo} alt="logo" />
           <p>MediMinds</p>
           </a>
-
                   <ul>
       <li>
         <th>Company</th>
@@ -30,11 +30,12 @@ const Footer = () => {
       </li>
 
   </ul>
+  <Button />
   <div className="copy">
   <p>©2023 Medimind. All rights reserved.</p>
 
   </div>
-  </div>
+    </div>
   )}
 
 export default Footer;

@@ -12,6 +12,7 @@ import lan3 from "../../assets/lan3.jpg"
 import lan4 from "../../assets/lan4.jpg"
 import Footer from "../Footer/footer";
 import Loader from "../Loader/loader";
+
 const Header = ( ) => {
     return (
         <>
@@ -29,6 +30,7 @@ const Header = ( ) => {
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Donate Today</a></li>
                 </ul>
                 <div className="login">
                     <a href="about">Sign In</a>
@@ -131,6 +133,7 @@ const Header = ( ) => {
 
             </section>
 <Footer />
+
 
             </>
     )
