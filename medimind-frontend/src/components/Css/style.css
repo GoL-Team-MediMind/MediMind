@@ -4,14 +4,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
-   
+
 }
 
 .logo{
     text-decoration: none;
     color: black;
     max-width: 15%;
-    
+
     font-size: 1.3rem;
     margin-right:30%;
   }
@@ -76,7 +76,7 @@ header ul li a:hover{
 }
 .login a:hover{
     background-color:#00518F;
-    
+
 }
 .content {
     position: relative;
@@ -136,7 +136,7 @@ header ul li a:hover{
     border-radius: 6px;
  padding-left:21px;
  padding-right: 21px;
- 
+
 }
 .content .box .b2{
     margin-left: 15px;
@@ -156,21 +156,21 @@ header ul li a:hover{
     height: 40px;
     border-radius: 6px;
  padding-left:21px;
- padding-right: 21px; 
+ padding-right: 21px;
 color:#0078D3;
 border-color: #0078D3;
 
 }
 .content .box .b1 span{
     display: inline-block;
-    
+
     font-weight: 800;
     letter-spacing: 1px;
     text-decoration: none;
 }
 .content .box .b2 span{
     display: inline-block;
-   
+
     font-weight: 800;
     letter-spacing: 1px;
     text-decoration: none;
@@ -253,7 +253,7 @@ border-color: #0078D3;
     font-size: 1rem;
     font-weight: 600;
     width: 33.33%;
-   
+
 }
 .info img{
   margin-bottom: 10%;
@@ -346,7 +346,7 @@ transition: transform 0.5s ease;
     }
     .point2:hover {
         transform: scale(1.1);
-    }  
+    }
 .join{
     /* width: 100px;
         height: 100px; */
@@ -367,7 +367,7 @@ opacity: 1;
 
 .join h3{
     margin-top:8%;
-    padding-left:40%;   
+    padding-left:40%;
 }
 .join button{
     margin-left: 15px;
@@ -428,18 +428,22 @@ font-size: large;
     margin-right: 30%;
 }
 .donation button:hover{
-   
+
     background-color: #00518F;
-   
+
     border-radius: 6px;
  border: 0px;
  color:white;
 }
 .footer{
     padding: 100px 120px 0px 120px;
-    background-color: #E0EFFA;
+    background-color: #3c97d8;
     width: 100%;
-    height: 10%;   
+    height: 10%;
+}
+.footer img {
+    max-width: 7%;
+    cursor: pointer;
 }
 .footer ul{
 margin-top: 7%;
@@ -487,14 +491,14 @@ height: 35%;
 .pic2{
     width:100%;
     height:55%;
-    
+
 }
 .pic3{
     width:100%;
     height:55%;
 }
 .pic4{
-    
+
     width: 100%;
 margin-top: 10%;
 height: 35%;

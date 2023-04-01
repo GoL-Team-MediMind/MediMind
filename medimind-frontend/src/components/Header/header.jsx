@@ -1,6 +1,5 @@
 import React from "react";
 import "../Css/style.css"
-import Logo from "../../assets/logo.png"
 import hospital from "../../assets/hospital-building.png"
 import layers from "../../assets/layers.png"
 import shield from "../../assets/shield.png"
@@ -11,11 +10,16 @@ import lan1 from "../../assets/lan1.jpg"
 import lan2 from "../../assets/lan2.jpg"
 import lan3 from "../../assets/lan3.jpg"
 import lan4 from "../../assets/lan4.jpg"
+import Footer from "../Footer/footer";
+import Loader from "../Loader/loader";
 const Header = ( ) => {
     return (
-        <><section class="header">
-           
+        <>
+
+            <section class="header">
+
             <header>
+
                 <a href="#" class="logo">
                     <p>MediMinds</p>
                 </a>
@@ -33,9 +37,9 @@ const Header = ( ) => {
             <div className="content">
                 <div className="box">
                     <h2>Access your patient's <span>health </span>data and records remotely, anytime and anywhere.<img src={hospital} /></h2>
-                    <p>By ensuring that health data is stored safely and securely, 
-                        patients and healthcare providers can work together more effectively to 
-                        ensure that individuals receive the primary health care they need to maintain 
+                    <p>By ensuring that health data is stored safely and securely,
+                        patients and healthcare providers can work together more effectively to
+                        ensure that individuals receive the primary health care they need to maintain
                         good health and wellbeing.</p>
                     <button class="b1"><span>Medic</span></button>
                     <button class="b2"><span>Patient</span></button>
@@ -45,14 +49,14 @@ const Header = ( ) => {
                     <div className="part1">
                     <img className="pic1" src={lan4} alt="" />
                     <img className="pic2" src={lan1} alt="" />
-                        </div>                    
+                        </div>
                         <div className="part2">
                     <img className="pic3" src={lan2} alt="" />
                     <img className="pic4" src={lan3} alt="" />
-                        </div>   
+                        </div>
 
             </div>
-           
+
 
 </div>
         </section>
@@ -68,15 +72,15 @@ const Header = ( ) => {
 <img src={shield} alt="" />
 <h2>Protected information</h2>
         <p>Our web app employs state-of-the-art encryption and multi-factor authentication to ensure that your sensitive information is always protected and secure.</p>
-    
+
     </li>
     <li>
 <img src={targeting} alt="" />
 <h2>Precise information</h2>
         <p>Built on a foundation of rigorous data validation and quality control measures, our web app ensures that you can always rely on accurate and precise information..</p>
-    
+
     </li>
-    
+
 
 </ul>
             </div>
@@ -93,7 +97,7 @@ const Header = ( ) => {
 <img src={medical} alt="" />
 <p>Our cloud-based health data storage service is scalable and accessible from anywhere,
      which makes it an ideal solution for healthcare organizations of all sizes. With our service,
-      you can store and manage your health data from a central location, 
+      you can store and manage your health data from a central location,
     allowing you to streamline your operations and improve efficiency.</p>
     </div>
     <div class="point2">
@@ -108,12 +112,12 @@ const Header = ( ) => {
 
 
     <h2>Say goodbye to the hassle of accessing your health records!
-         Medimind's smart platform simplifies access to primary healthcare while securely storing your health data, 
+         Medimind's smart platform simplifies access to primary healthcare while securely storing your health data,
          so you can focus on what really matters - your health.</h2>
          <div className="create">
-<h3>Join our community and be a catalyst for change in the healthcare 
+<h3>Join our community and be a catalyst for change in the healthcare
     industry by promoting access to primary care for all. <button><a href="">Join Us</a> </button></h3>
-    
+
     </div>
 
 </div>
@@ -124,39 +128,10 @@ const Header = ( ) => {
     <button><p>Donate</p></button>
     </div>
 </div>
-<div className="footer">
-<a href="#" class="logo">
-                    <p>MediMinds</p>
-                </a>
 
-                <ul>
-    <li>
-      <th>Company</th>
-        <p><a href="">Home</a></p>
-        <p><a href="">About</a></p>
-        <p><a href="">Services</a></p>
-     </li>
-    <li>
-    <th>Our Products</th>
-        <p><a href="">HRS</a></p>
-        <p><a href="">Health Education</a></p>
-        <p><a href="">Donate</a></p>
-    </li>
-    <li>
-    <th>Company</th>
-        <p><a href="">Support</a></p>
-        <p><a href="">Make a suggestion</a></p>
-        <p><a href="">FAQs</a></p>    
-    </li>
-
-</ul>
-<div className="copy">
-<p>©2023   Medimind</p>
-
-</div></div>
             </section>
+<Footer />
 
-            
             </>
     )
 }
