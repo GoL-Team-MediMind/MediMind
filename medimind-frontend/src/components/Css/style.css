@@ -854,11 +854,12 @@ margin-bottom: 10%;
     .signupform button:hover{
         background-color: #4BB543;
     } */
+    
     .patientregistrationheader{
         position: relative;
         width: 100%;
         /* min-height: 100vh; */
-        padding: 70px 120px;
+        padding: 55px 120px;
         /* display: flex; */
         justify-content: space-between;
         align-items: center;
@@ -877,6 +878,9 @@ patientheader {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px  rgb(102, 97, 97);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    
 }
 
 .patientregistrationheader ul{
@@ -892,10 +896,16 @@ patientheader {
 .patientregistrationheader ul li a{
     display: inline-block;
     color: #101E73;
-    margin-left: 40px;
+    margin-left: 20px;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
+    padding-right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  margin-top: 10%;
 }
 .patientregistrationheader ul li a:hover{
     color: blue;
@@ -909,7 +919,12 @@ patientheader {
 }
 .patientregistrationform{
     text-align: center;
-    margin: 1% 13%;     
+    /* margin: 1% 13%;      */
+    width: 65%;
+    padding-top: 7%;
+    border-left: 1px  rgb(102, 97, 97);
+    box-shadow: -4px 0 5px -5px  rgba(0, 0, 0, 0.5);
+   
 }
 .patientregistrationform input,select{
 width: 45%;
@@ -933,30 +948,220 @@ padding-left: 2%;
     background-color: white;
 } */
 .patientregistrationform button{
-    margin-left: 50%;
+    margin-left: 73%;
     background-color: #0078D3;
-    width: 45%;
+    width: 22.5%;
     height: 45px;
     border-radius: 5px;
     color: white;
     border: none;
+    margin-bottom: 15%;
 }
 .patientregistrationform button:hover{
     background-color: #4BB543;
 }
 .regcontainer{
     background-color: white;
-    padding-bottom: 15%;
+  
 }
 .patientregistrationform p{
-    margin-top: 2%;
-    margin-left: 50%;
+    margin-top: 3%;
+    margin-left: 73%;
     color: #727070;
     font-weight: bold;
     font-size: small;
+    padding-bottom: 15%;
+}
+.nextofkin img{
+    /* margin-left: 0px; */
+    width: 50px;
 }
 .patientregistrationform a{
     text-decoration: none;
     color: #0078D3;
     font-size: small;
+}
+.regbody{
+    display: flex;
+    height: 100%;
+
+}
+.regmenu{
+    padding-top: 7%;
+    width: 25%;
+    padding-left: 5%;
+    border:none;
+    
+}
+.regmenu ul{
+    margin-top: 25%;
+    list-style: none;
+}
+.regmenu img{
+    width: 15px;
+    margin-right: 3%;
+}
+.regmenu li{
+    margin-bottom: 10%;
+}
+.editpage{
+    background-color: white;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+#dp{
+    width: 150px;
+    margin: 5% 0%;
+}
+.editpage h2{
+    margin: 4% 0%;
+}
+.editpage input{
+    width: 40%;
+    height: 45px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: #947979;
+    box-sizing: border-box;
+    color: black;
+    padding-left: 2%;
+    margin-top: 1%;
+}
+.editpage label{
+    font-size: 100%;
+    font-weight: 500;
+}
+.editpage button{
+   
+    background-color: #0078D3;
+    width: 40%;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.editpage button:hover{
+    background-color: green;
+}
+.editpage #delete{
+    background-color: #FEE9E9;
+    color: #FA3030;
+    font-weight: 600;
+    width: 25%;
+    margin-top: 3%;
+    margin-bottom: 7%;
+}
+.editpage #delete:hover{
+    background-color: red;
+    color: white;
+   
+}
+.editpage hr{
+    margin-top: 3%;
+    width: 25%;
+}
+.editpageheader{
+    position: relative;
+    width: 100%;
+    /* padding: 30px 0px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editpageheader ul{
+    position: absolute;
+    top: 5px;
+    display: flex;
+   margin-left: 40%;
+}
+
+.editpageheader ul li{
+    list-style: none;
+}
+
+.editpageheader ul li a{
+    display: inline-block;
+    color: #000000;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.editpageheader ul li a:hover{
+    color: blue;
+    transition: .0.5s;
+}
+.editpageheader{
+    display: flex;
+}
+.profilepagecontainer{
+    background-color: white;
+    padding-left: 8%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+#profilepic{
+    width: 20%;
+}
+#current{
+    color:#0078D3;
+}
+.nameheader,.infoheader{
+    display: flex;
+}
+.nameheader{
+margin-top: 5%
+}
+.nameheader h1{
+    margin-top:5%;
+    margin-right:25%;
+    margin-bottom: 5%;
+}
+.nameheader a{
+    margin-top: 5%;
+    bottom: 0;
+    
+}
+#edit{
+    width: 20px;
+    height:20px;
+}
+#title{
+    margin-bottom: 4%;
+}
+.infoheader{
+margin-bottom: 4%;
+font-weight: bold;
+}
+.profilepagecontainer hr{
+    width: 70%;
+    margin-bottom: 4%;
+}
+.page p{
+    margin-bottom: 3%;
+    font-weight: 500;
+}
+#basic{
+    margin-left: 5%;
+}
+.creatorid{
+    margin-top: 10%;
+    font-weight: normal;
+    font-size: small;
+}
+.creatorid span{
+    color: #0078D3;
+}
+#passportdesc{
+    
+    margin-left: 0%;
+    color: #727070;
+    font-weight: bold;
+    font-size: small;
+    padding-bottom: 5%;
+}
+#passporttitle{
+    margin-bottom:3%;
 }
