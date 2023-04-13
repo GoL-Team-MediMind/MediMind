@@ -7,10 +7,10 @@ import Patientreg from './components/SignUp/patientReg/patientReg'
 const App = ( ) => {
   return (
     <div className="App">
-    <Header />
+    {/* <Header /> */}
     {/* <Admin  /> */}
     {/* <Patient  /> */}
-    {/* <Patientreg   /> */}
+    <Patientreg   />
 
               </div>
 

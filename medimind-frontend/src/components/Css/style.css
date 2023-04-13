@@ -757,7 +757,7 @@ color: #002E52;
         font-size: x-small;
         font-weight: 500;
     }
-    regheader {
+    /* regheader {
         position: absolute;
         top: 0;
         left: 0;
@@ -801,14 +801,14 @@ color: #002E52;
     }
     .layer4 {
         background-color: rgba(0, 0, 0, 0.7);
-        /* position: absolute; */
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         padding: 50px 120px;
-    }
-    .signupform h3{
+    } */
+    /* .signupform h3{
 color: #0078D3;
 font-size:140%;
 margin-bottom: 10%;
@@ -829,9 +829,9 @@ margin-bottom: 10%;
         font-size: medium;
         font-weight: 600;
         color: #544F4F;
-    }
+    } */
     
-    #fname{  
+    /* #fname{  
         width: 40%;
         margin-right: 20%;
     }
@@ -853,4 +853,110 @@ margin-bottom: 10%;
     }
     .signupform button:hover{
         background-color: #4BB543;
+    } */
+    .patientregistrationheader{
+        position: relative;
+        width: 100%;
+        /* min-height: 100vh; */
+        padding: 70px 120px;
+        /* display: flex; */
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        background-color: #ffffff;
     }
+   patientheader .adlogo{
+    color: #101E73;
+   } 
+patientheader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patientregistrationheader ul{
+    position: relative;
+    display: flex;
+   
+}
+
+.patientregistrationheader ul li{
+    list-style: none;
+}
+
+.patientregistrationheader ul li a{
+    display: inline-block;
+    color: #101E73;
+    margin-left: 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.patientregistrationheader ul li a:hover{
+    color: blue;
+    transition: .0.5s;
+}
+.patientregistrationform h2{
+    text-align: center;
+    color: #0078D3;
+    font-size:200%;
+    margin-bottom: 8%;
+}
+.patientregistrationform{
+    text-align: center;
+    margin: 1% 13%;     
+}
+.patientregistrationform input,select{
+width: 45%;
+height: 45px;
+margin-bottom: 5%;
+border-radius: 5px;
+border-width: 1px;
+border-color: #947979;
+box-sizing: border-box;
+color: black;
+padding-left: 2%;
+}
+#left{
+    margin-right: 2.5%;
+ 
+}
+#right{
+    margin-left: 2.5%;
+}
+/* patientReg{
+    background-color: white;
+} */
+.patientregistrationform button{
+    margin-left: 50%;
+    background-color: #0078D3;
+    width: 45%;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.patientregistrationform button:hover{
+    background-color: #4BB543;
+}
+.regcontainer{
+    background-color: white;
+    padding-bottom: 15%;
+}
+.patientregistrationform p{
+    margin-top: 2%;
+    margin-left: 50%;
+    color: #727070;
+    font-weight: bold;
+    font-size: small;
+}
+.patientregistrationform a{
+    text-decoration: none;
+    color: #0078D3;
+    font-size: small;
+}
