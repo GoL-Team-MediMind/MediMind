@@ -6,9 +6,9 @@ const admin=()=>{
 <div className="admin">
     <div className="layer3">
         <adheader>
-        <a href="#" class="adlogo">
+        <NavLink to="/" class="adlogo">
             <p>MediMinds</p>
-        </a>
+            </NavLink>
 
         <ul>
             <li><a href="#">About</a></li>
@@ -16,7 +16,7 @@ const admin=()=>{
             <li><a href="#">Blogs</a></li>
             <li><a href="#">Contact US</a></li>
         </ul>
-        
+
     </adheader>
 
     <div className="adminlog">

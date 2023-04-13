@@ -12,6 +12,7 @@ import lan3 from "../../assets/lan3.jpg"
 import lan4 from "../../assets/lan4.jpg"
 import Footer from "../Footer/footer";
 import Loader from "../Loader/loader";
+import { NavLink } from "react-router-dom";
 const Header = ( ) => {
     return (
         <>
@@ -31,7 +32,11 @@ const Header = ( ) => {
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <div className="login">
-                    <a href="about">Sign In</a>
+
+
+                    <NavLink to="/admin">
+                    Sign In
+                    </NavLink>
                 </div>
             </header>
             <div className="content">
