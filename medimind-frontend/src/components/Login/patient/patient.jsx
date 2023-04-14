@@ -28,7 +28,7 @@ const patient=()=>{
             <h4 className='cred'>Password</h4>
             <input type="password" />
             <a href="" className='forgot'><p>Forgot your password?</p></a>
-          <NavLink to="/profilepage"><button>Log-in</button></NavLink>  
+          <NavLink to="/patientdashboard"><button>Log-in</button></NavLink>  
             <h6>New User? <a><span>Create account</span></a></h6>
         </form>
     </div>

@@ -15,6 +15,7 @@ import Admindashboard from "./components/Dashboard/admindashboard/admindashboard
 import Nextofkin from './components/SignUp/patientReg/nextofkin';
 import Passport from './components/SignUp/patientReg/passport';
 import Signupconfirmation from './components/SignUp/patientReg/signupconfirmation';
+import Patientdashboard from "./components/Dashboard/patientdashboard/patientdashboard";
 const App = ( ) => {
   return (
     <BrowserRouter>
@@ -33,6 +34,7 @@ const App = ( ) => {
     <Route path='/nextofkin' element={<Nextofkin  /> } />
     <Route path='/passport' element={<Passport  /> } />
     <Route path='/signupconfirmation' element={<Signupconfirmation  /> } />
+    <Route path='/patientdashboard' element={<Patientdashboard  /> } />
 
    {/* <Header /> */}
     {/* <Admin  /> */}

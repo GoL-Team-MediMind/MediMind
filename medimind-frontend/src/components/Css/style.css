@@ -1262,3 +1262,202 @@ border: 1px black;
     width: 10%;
     height: 50px;
 }
+.appandmeds{
+    transition: transform 0.5s ease;
+}
+.appointments{
+    margin-right: 2%;
+    display: inline-block;
+    width: 47%;
+    border: 1px  rgb(102, 97, 97);
+    box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1%;
+    margin-left: 1%;
+    transition: transform 0.5s ease;
+    background-color: white;   
+}
+.appointments:hover{
+    transform: scale(1.05); 
+}
+.medications{
+    margin-left: 2%;
+    display: inline-block;
+    width: 47%;
+    border: 1px  rgb(102, 97, 97);
+    box-shadow:inset 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1%;
+    margin-right: 1%;
+    transition: transform 0.5s ease;
+    background-color: white;
+}
+.medications:hover{
+    transform: scale(1.05);
+   
+}
+#portalbody{
+  padding-bottom: 10%;
+    width: 70%;
+}
+.appointmentleft{
+    display: inline-block;
+    width: 70%;
+  vertical-align: top;
+  font-size: 16px; /* reset the font-size */
+    text-align: left;
+    align-items: right;
+    
+   
+}
+.appointmentright{
+ 
+    display: inline-block;
+    width: 30%;
+    margin: 2% 0%;
+    padding : 0% 2%;
+    vertical-align: middle
+    
+}
+.appointmentrecord{
+    height: 10%;
+    font-size: 0;
+    margin: 1rem ;
+    border-bottom: 0.5px solid #8c968c;
+    box-shadow: 0px 0px 1px rgba(99, 97, 97, 0.5);
+}
+.appointmentrecord:hover{
+    background-color: rgba(185, 192, 189, 0.644);
+}
+.medicationrecord{
+    height: 10%;
+    font-size: 0;
+    margin: 1rem ;
+    border-bottom: 0.5px solid #8c968c;
+    box-shadow: 0px 0px 1px rgba(99, 97, 97, 0.5);
+}
+.medicationrecordrecord:hover{
+    background-color: rgba(185, 192, 189, 0.644);
+}
+.appointmentleft h5{
+    padding-left: 10%;
+    padding-top: 1%;
+    font-weight: bold;
+}
+.appointmentrecord button{
+    margin-left:30%;
+    width:70%;
+    height: 30px;
+    margin-top: 8%;
+    color: white;
+    font-weight: 550;
+    font-size:10px;
+}
+.medicationrecord button{
+    margin-left:30%;
+    width:70%;
+    height: 30px;
+    margin-top: 8%;
+    color: white;
+    font-weight: 550;
+    font-size:10px;
+}
+#morebutton{
+    width: 90%;
+    margin: 0% 1rem;
+    height:25px;
+    border-radius: 5px;
+    background:none;
+    border: 1px solid #4CAF50;
+    color: black;
+
+}
+#morebutton:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+#nomore{
+    border:none;
+    box-shadow: none;
+    text-align: center;
+}
+#nomore .appointmentleft{
+    text-align: center  ;
+    margin: 6%;
+    color: #434343;
+}
+#nomore:hover{
+    background-color: inherit;
+}
+.records{
+    width: 98%;
+    margin: 2% 1%;    
+    border: 1px  rgb(102, 97, 97);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1%;
+}
+#portalbody h4{
+    text-align: left;
+    margin: 1rem ;
+    font-size: 23px;
+}
+tableheader{
+    margin-left: 1.5%;
+    display: inline-flex;
+    gap: 9rem;
+    text-align: left;
+}
+.recorddate{
+    text-align: left;
+}
+#portalbody th{
+    margin-top: 3%;
+    font-weight: 500;
+}
+tableheader th,tr{
+    width: 250px;
+}
+#patientrecord{
+    margin-top: 2%;
+    margin-left: 1.5%;
+    display: inline-flex;
+    gap: 9rem;
+    text-align: left;margin-left: 1.5%;
+    font-weight: 400;
+    color: #333;
+    font-size: 15px;
+}
+#patientrecord h6{
+margin-top: 20%;
+
+}
+#portalmsg{
+    font-size: 30px;
+    text-align: left;
+    margin-left: 1%;
+}
+#portalmsg span{
+    color: #0078D3;   
+}
+#portalmsg2{
+    color: #000;
+    text-align: left;
+    margin-left: 1%;
+    margin-top: 2%;
+}
+#portalbody table{
+    margin-bottom: 3%;
+}
+#portalnav li{
+    border: 1px  rgb(102, 97, 97);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 3%;
+    margin-right: 4%;
+    
+}
+/* #portalnav li:hover{
+    background-color: rgba(185, 192, 189, 0.644);
+    
+} */
