@@ -8,7 +8,11 @@ const patientreg=()=>{
         
 <div className="patientregistrationheader">
     <patientheader>
+<<<<<<< HEAD
 <a href="#" class="adlogo">
+=======
+<a href="/" class="adlogo">
+>>>>>>> route-path
             <p>MediMinds</p>
         </a>
 

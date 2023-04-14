@@ -12,6 +12,7 @@ import lan3 from "../../assets/lan3.jpg"
 import lan4 from "../../assets/lan4.jpg"
 import Footer from "../Footer/footer";
 import Loader from "../Loader/loader";
+import { NavLink } from "react-router-dom";
 const Header = ( ) => {
     return (
         <>
@@ -25,13 +26,17 @@ const Header = ( ) => {
                 </a>
 
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
                 <div className="login">
-                    <a href="about">Sign In</a>
+
+
+                    <NavLink to="/patientreg">
+                    Sign In
+                    </NavLink>
                 </div>
             </header>
             <div className="content">
@@ -41,8 +46,9 @@ const Header = ( ) => {
                         patients and healthcare providers can work together more effectively to
                         ensure that individuals receive the primary health care they need to maintain
                         good health and wellbeing.</p>
-                    <button class="b1"><span>Medic</span></button>
-                    <button class="b2"><span>Patient</span></button>
+                    <NavLink to="/medic"><button class="b1"><span>Medic</span></button></NavLink>
+                    <NavLink to="/patient"><button class="b2"><span>Patient</span></button></NavLink>
+                   
 
                 </div>
                 <div className="ryt">
