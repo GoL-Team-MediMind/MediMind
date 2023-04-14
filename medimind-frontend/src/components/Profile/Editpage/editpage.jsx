@@ -3,6 +3,7 @@ import dp from '../../../assets/dp.png'
 import menu from '../../../assets/menu.png'
 import close from '../../../assets/close.png'
 import menu1 from '../../../assets/menu1.png'
+import { NavLink } from 'react-router-dom'; 
 
 const editpage=()=>{
     return(
@@ -12,9 +13,9 @@ const editpage=()=>{
    <h1>Profile</h1>
    <ul>
             <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="/profilepage">Profile</a></li>
             <li><a href="#">Book appointment</a></li>
-            <li><a href="#">Health Ed</a></li>
+            <li><a href="/patient">Sign out</a></li>
         </ul>
    <br />
    </div>
@@ -26,7 +27,7 @@ const editpage=()=>{
     <input type="username" /><br />
     <label htmlFor="E-mail">E-mail</label><br />
     <input type="email" /><br />
-    <button>Update Information</button>
+    <NavLink to="/profilepage"><button>Update Information</button></NavLink>
     <h2>Change Password</h2 >
     <label htmlFor="">Current Password</label><br />
     <input type="password" /><br />
@@ -34,9 +35,9 @@ const editpage=()=>{
     <input type="text" /><br />
     <label htmlFor="">Confirm New Password</label><br />
     <input type="text" /><br />
-    <button>Change Password</button>
+    <NavLink to="/profilepage"><button>Change Password</button></NavLink>
     <hr />
-    <button id="delete">Delete Account</button>    
+    <button id="delete">Delete Account</button>
 </div>
 <div className="rightprofile">
 

@@ -21,7 +21,7 @@ const admindashboard=()=>{
             <li><a href="#" id='odd'>Dashboard</a></li>
             <li><a href="#" >Blogspot</a></li>
             <li><a href="#" >Profile</a></li>
-            <li><a href="#">Sign Out</a></li>
+            <li><a href="/admin">Sign Out</a></li>
             <li><img src={dp}></img></li>
         </ul>
         </patientheader>
@@ -32,10 +32,10 @@ const admindashboard=()=>{
     <h2 id='passporttitle' className='successtitle'>Admin dashboard</h2>
     <h4 id='option'>Select any of the option below to get started</h4>
     <div className='choices'>
- <a href="" class="leftoption">  <img id='search'  src={register} alt="" />
- <h2>Register a new patient</h2>
+ <a href="#" class="leftoption">  <img id='search'  src={register} alt="" />
+ <h2>Register a new medic</h2>
  </a>
-  <a href="" class="rightoption"> <img id='search' src={search} alt="" />
+  <a href="/patientpoll" class="rightoption"> <img id='search' src={search} alt="" />
   <h2>Look up a patient with <br /> "patient id"</h2></a></div>
 </div></div>
         </div> 

@@ -1,6 +1,7 @@
 import React,  { useState } from 'react';
 import dp from '../../../assets/dp.png'
 import edit from '../../../assets/edit.png'
+import { NavLink } from 'react-router-dom'; 
 
 const Profilepage =()=>{
 
@@ -23,7 +24,7 @@ const Profilepage =()=>{
     </div>
     <div className="nameheader">
     <h1>Jane Doe <span>(City,Country)</span></h1>
-    <a href=""><img id='edit' src={edit} alt="" /></a>
+    <a href="/editpage"><img id='edit' src={edit} alt="" /></a>
     </div>
 <h3 id='title'>Patient</h3>
     

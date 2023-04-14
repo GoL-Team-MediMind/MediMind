@@ -11,7 +11,7 @@ const confirmation=()=>{
         
 <div className="patientregistrationheader">
     <patientheader>
-<a href="#" class="adlogo">
+<a href="/" class="adlogo">
             <p>MediMinds</p>
         </a>
 
@@ -27,11 +27,13 @@ const confirmation=()=>{
 <div className="patientregistrationform" id='confirmationbody'>
     <h2 id='passporttitle' className='successtitle'>Patient account created successfully!</h2>
    <img id='note' src={note} alt="" />
-<h4 id="successmsg">The patient’s  profile as been successfully created. The patient would receive an email with their login ID and other details. You can proceed to  your dashboard to look up for Patient’s record</h4>
+<h4 id="successmsg">The patient’s  profile as been successfully created. The patient would receive an email with their login ID and other details. You can proceed to  your <a href='/admindashboard
+'>dashboard</a> to look up for Patient’s record</h4>
 
 </div></div>
         </div> 
         </div>
+        
     )
 }
 export default confirmation;

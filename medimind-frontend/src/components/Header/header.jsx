@@ -31,11 +31,11 @@ const Header = ( ) => {
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <div className="login">
+                <div className="login" id="adminpanel">
 
 
-                    <NavLink to="/patientreg">
-                    Sign In
+                    <NavLink to="/admin">
+                    Admin panel
                     </NavLink>
                 </div>
             </header>

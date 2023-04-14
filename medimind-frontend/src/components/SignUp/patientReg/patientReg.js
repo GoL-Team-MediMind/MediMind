@@ -1,6 +1,7 @@
 import React from 'react'
 import point from '../../../assets/point.png'
 import pointblue from '../../../assets/pointblue.png'
+import { NavLink } from 'react-router-dom'; 
 const patientreg=()=>{
     return(
         <div className="regcontainer">
@@ -8,11 +9,7 @@ const patientreg=()=>{
         
 <div className="patientregistrationheader">
     <patientheader>
-<<<<<<< HEAD
-<a href="#" class="adlogo">
-=======
 <a href="/" class="adlogo">
->>>>>>> route-path
             <p>MediMinds</p>
         </a>
 
@@ -49,7 +46,7 @@ const patientreg=()=>{
             <option value="">Male</option>
              <option value="">Female</option>
             </select><br />
-<button>Next-Step</button>
+<NavLink to="/nextofkin"><button>Next-Step</button></NavLink>
 <p>Already have an account? <a href="">Log-in</a></p>
 </div></div>
         </div> 

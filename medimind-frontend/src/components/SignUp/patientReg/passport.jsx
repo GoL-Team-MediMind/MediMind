@@ -2,6 +2,7 @@ import React from 'react';
 import point from '../../../assets/point.png'
 import pointblue from '../../../assets/pointblue.png'
 import dp from '../../../assets/dp.png'
+import { NavLink } from 'react-router-dom'; 
 const passportupload=()=>{
     return(
         <div className='nextofkin'>
@@ -10,7 +11,7 @@ const passportupload=()=>{
         
 <div className="patientregistrationheader">
     <patientheader>
-<a href="#" class="adlogo">
+<a href="/" class="adlogo">
             <p>MediMinds</p>
         </a>
 
@@ -35,7 +36,7 @@ const passportupload=()=>{
     <p id='passportdesc'>We require you to upload a passport photograph of yourself to keep a record of your identity</p>
 <input type="file" placeholder=" First Name" id="left" />
 
-<button>Submit</button>
+<NavLink to="/signupconfirmation"><button>Submit</button></NavLink>
 </div></div>
         </div> 
         </div>

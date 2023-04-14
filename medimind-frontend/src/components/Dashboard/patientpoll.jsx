@@ -25,7 +25,7 @@ const confirmation=()=>{
 <div className="patientregistrationform" id='confirmationbody'>
    <img id='note' class="poll" src={note} alt="" />
    <h2 className="successtitle" id='passporttitle'>Patients Poll</h2>
-<h4 id="successmsg" className='searchdesc'>You can search for patients with their ID to see their medical records</h4>
+<h4 id="successmsg" className='searchdesc'>  You can search for patients with their ID to see their medical records</h4>
 <input type="text" id="searchbar" placeholder='Search by Patient ID...'></input>
 <button id='searchbutton'>Search</button>
 

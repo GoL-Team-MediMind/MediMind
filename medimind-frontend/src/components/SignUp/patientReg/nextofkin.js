@@ -2,6 +2,7 @@ import React from 'react';
 import point from '../../../assets/point.png'
 import pointblue from '../../../assets/pointblue.png'
 import dp from '../../../assets/dp.png'
+import { NavLink } from 'react-router-dom'; 
 const nextofkin=()=>{
     return(
         <div className='nextofkin'>
@@ -10,12 +11,12 @@ const nextofkin=()=>{
         
 <div className="patientregistrationheader">
     <patientheader>
-<a href="#" class="adlogo">
+<a href="/" class="adlogo">
             <p>MediMinds</p>
         </a>
 
         <ul>
-            <li><a href="#">Dashboard</a></li>
+            <li><a href="/doctordashboard">Dashboard</a></li>
             <li><a href="#">Sign Out</a></li>
             <li><img src={dp}></img></li>
         </ul>
@@ -53,7 +54,7 @@ const nextofkin=()=>{
             <option value="">Male</option>
              <option value="">Female</option>
             </select><br />
-<button>Next-Step</button>
+<NavLink to="/passport"><button>Next-Step</button></NavLink>
 </div></div>
         </div> 
         </div>
