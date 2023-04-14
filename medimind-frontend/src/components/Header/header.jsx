@@ -26,7 +26,7 @@ const Header = ( ) => {
                 </a>
 
                 <ul>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
@@ -34,7 +34,7 @@ const Header = ( ) => {
                 <div className="login">
 
 
-                    <NavLink to="/admin">
+                    <NavLink to="/patientreg">
                     Sign In
                     </NavLink>
                 </div>
@@ -46,8 +46,9 @@ const Header = ( ) => {
                         patients and healthcare providers can work together more effectively to
                         ensure that individuals receive the primary health care they need to maintain
                         good health and wellbeing.</p>
-                    <button class="b1"><span>Medic</span></button>
-                    <button class="b2"><span>Patient</span></button>
+                    <NavLink to="/medic"><button class="b1"><span>Medic</span></button></NavLink>
+                    <NavLink to="/patient"><button class="b2"><span>Patient</span></button></NavLink>
+                   
 
                 </div>
                 <div className="ryt">

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from 'react-router-dom'; 
 
 
 const patient=()=>{
@@ -7,7 +7,7 @@ const patient=()=>{
 <div className="patient">
     <div className="layer3">
         <adheader>
-        <a href="#" class="adlogo">
+        <a href="/" class="adlogo">
             <p>MediMinds</p>
         </a>
 
@@ -28,7 +28,7 @@ const patient=()=>{
             <h4 className='cred'>Password</h4>
             <input type="password" />
             <a href="" className='forgot'><p>Forgot your password?</p></a>
-            <button>Log-in</button>
+          <NavLink to="/profilepage"><button>Log-in</button></NavLink>  
             <h6>New User? <a><span>Create account</span></a></h6>
         </form>
     </div>
