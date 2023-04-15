@@ -11,7 +11,6 @@ import lan2 from "../../assets/lan2.jpg"
 import lan3 from "../../assets/lan3.jpg"
 import lan4 from "../../assets/lan4.jpg"
 import Footer from "../Footer/footer";
-import Loader from "../Loader/loader";
 import { NavLink } from "react-router-dom";
 const Header = ( ) => {
     return (
@@ -21,7 +20,7 @@ const Header = ( ) => {
 
             <header>
 
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <p>MediMinds</p>
                 </a>
 
@@ -33,7 +32,7 @@ const Header = ( ) => {
                     <NavLink to="/service">Services
                     </NavLink></li>
                     <li>
-                    <NavLink to="/aboutus">Team
+                    <NavLink to="/team">Team
                     </NavLink></li>
                     <li>
                     <NavLink to="/aboutus">Contact Us
@@ -50,7 +49,7 @@ const Header = ( ) => {
             </header>
             <div className="content">
                 <div className="box">
-                    <h2>Access your patient's <span>health </span>data and records remotely, anytime and anywhere.<img src={hospital} /></h2>
+                    <h2>Access your patient's <span>health </span>data and records remotely, anytime and anywhere.<img src={hospital}  alt="hospital"/></h2>
                     <p>By ensuring that health data is stored safely and securely,
                         patients and healthcare providers can work together more effectively to
                         ensure that individuals receive the primary health care they need to maintain
@@ -131,7 +130,7 @@ const Header = ( ) => {
          so you can focus on what really matters - your health.</h2>
          <div className="create">
 <h3>Join our community and be a catalyst for change in the healthcare
-    industry by promoting access to primary care for all. <button><a href="">Join Us</a> </button></h3>
+    industry by promoting access to primary care for all. <button><a href="/">Join Us</a> </button></h3>
 
     </div>
 

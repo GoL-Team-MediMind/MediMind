@@ -1,10 +1,9 @@
-import React,{ useRef }from 'react';
+import React from 'react';
 import './App.css';
 import Header from './components/Header/header';
 import Patient from './components/Login/patient/patient'
 import Patientreg from './components/SignUp/patientReg/patientReg'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import SignUp from "./components/SignUp/AdminREg/Adminreg"
 import Login from "./components/Login/medic/medic"
 import Doctordashboard from "./components/Dashboard/doctordashboard/doctordashboard"
 import Patientpoll from "./components/Dashboard/patientpoll"
@@ -18,6 +17,7 @@ import Signupconfirmation from './components/SignUp/patientReg/signupconfirmatio
 import Patientdashboard from "./components/Dashboard/patientdashboard/patientdashboard";
 import About from './components/About/about';
 import Service from './components/Service/service';
+import Blog from "./components/Blog/blog"
 
 const App = ( ) => {
   return (
@@ -40,6 +40,7 @@ const App = ( ) => {
     <Route path='/patientdashboard' element={<Patientdashboard  /> } />
     <Route path='/aboutus' element={<About  /> } />
     <Route path='/service' element={<Service  /> } />
+    <Route path='/team' element={<Blog  /> } />
 
    {/* <Header /> */}
     {/* <Admin  /> */}
