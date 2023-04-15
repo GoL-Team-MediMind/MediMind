@@ -18,6 +18,7 @@ import Patientdashboard from "./components/Dashboard/patientdashboard/patientdas
 import About from './components/About/about';
 import Service from './components/Service/service';
 import Blog from "./components/Blog/blog"
+import Contact from './components/Contact/contact';
 
 const App = ( ) => {
   return (
@@ -41,7 +42,7 @@ const App = ( ) => {
     <Route path='/aboutus' element={<About  /> } />
     <Route path='/service' element={<Service  /> } />
     <Route path='/team' element={<Blog  /> } />
-
+    <Route path='/contact' element={<Contact  /> } />
    {/* <Header /> */}
     {/* <Admin  /> */}
     {/* <Patient  /> */}
