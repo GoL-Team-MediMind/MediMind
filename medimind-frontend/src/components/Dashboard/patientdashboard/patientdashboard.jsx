@@ -2,9 +2,102 @@ import React, {useState} from 'react'
 import point from '../../../assets/point.png'
 import pointblue from '../../../assets/pointblue.png'
 import { NavLink } from 'react-router-dom'; 
+const appoint = [
+    [
+      '11/02/2023',
+      '12:30',
+      'Dr. Smith',
+      'Dermatology',
+      'Virtual'
+    ],
+    [
+      '11/02/2023',
+      '12:30',
+      'Dr. Smith',
+      'Dermatology',
+      'Virtual'
+    ],
+    [
+      '11/02/2023',
+      '12:30',
+      'Dr. Smith',
+      'Dermatology',
+      'Virtual'
+    ],
+    [
+      '11/02/2023',
+      '12:30',
+      'Dr. Smith',
+      'Dermatology',
+      'Virtual'
+    ],
+    [
+      '11/02/2023',
+      '12:30',
+      'Dr. Smith',
+      'Dermatology',
+      'Virtual'
+    ]
+  ];
+const medication=[
+    ["Paracetamol",
+    "1/ day",
+"Headache",
+"12th/June/2023"]
+];
+  function createCard([date,time,name,department,location]) {
+    return (
+      <div className="card" onClick={() => { window.location.href='#'; }}>
+        <div className="uppercard"><h3>{date}</h3>
+        <h4>{time}</h4></div>
+       <div className="lowercard"> <h4>{name}</h4>
+        <p>{department}</p>
+        <p>{location}</p>
+        <button>Cancel Appointment</button></div>
+      </div>
+    );
+  }
+    function createCard2([date,name,dosage,reason]) {
+    return (
+      <div className="card" onClick={() => { window.location.href='#'; }}>
+        <div className="uppercard"><h3>{name}</h3>
+        <h4>{dosage}</h4></div>
+       <div className="lowercard"> <h4>{reason}</h4>
+        <p>{date}</p>
+        <button>Cancel Appointment</button></div>
+      </div>
+    );
+  }
 const Patientdashboard=()=>{
-    const [currentPage, setCurrentPage] = useState('page1');
 
+    const [currentPage, setCurrentPage] = useState('page1');
+    let page1temp;
+    let page2temp;
+    let page3temp;
+    let page4temp;
+    if(currentPage=='page1'){
+page1temp="oddnav";
+page2temp="";
+page3temp="";
+page4temp=""
+    }
+    if(currentPage=='page2'){
+        page2temp="oddnav";
+        page1temp="";
+        page3temp="";
+        page4temp="";    }
+            if(currentPage=='page3'){
+                page3temp="oddnav";
+                page2temp="";
+                page1temp="";
+                page4temp="";
+                    }
+                    if(currentPage=='page4'){
+                        page4temp="oddnav";
+                        page2temp="";
+                        page1temp="";
+                        page3temp="";
+                            }
     const handleButtonClick = (page) => {
       setCurrentPage(page);
     };
@@ -21,7 +114,7 @@ const Patientdashboard=()=>{
         <ul>
      
             
-            <li><a href="#">Portal</a></li>
+            <li><a href="/profilepage">Profile</a></li>
             <li><a href="#">Sign Out</a></li>
         </ul>
         </patientheader>
@@ -30,14 +123,14 @@ const Patientdashboard=()=>{
 <div className='regmenu'>
 
     <ul id='portalnav'>
-       <li  className={currentPage === 'page1' ? 'active' : ''}
+       <li id={page1temp}  className={currentPage === 'page1' ? 'active' : ''}
           onClick={() => handleButtonClick('page1')}>Home</li>
-        <li  className={currentPage === 'page1' ? 'active' : ''}
+        <li id={page2temp} className={currentPage === 'page2' ? 'active' : ''}
           onClick={() => handleButtonClick('page2')}>Appointments</li>
-        <li  className={currentPage === 'page1' ? 'active' : ''}
-          onClick={() => handleButtonClick('page2')}>Medications</li>
-        <li  className={currentPage === 'page1' ? 'active' : ''}
-          onClick={() => handleButtonClick('page1')}>Health Records</li>
+        <li  id={page3temp}className={currentPage === 'page3' ? 'active' : ''}
+          onClick={() => handleButtonClick('page3')}>Medications</li>
+        <li  id={page4temp} className={currentPage === 'page4' ? 'active' : ''}
+          onClick={() => handleButtonClick('page4')}>Health Records</li>
         
     </ul>
 </div>
@@ -143,11 +236,91 @@ const Patientdashboard=()=>{
 </div>
  )}
  {currentPage === 'page2' && (
-        <div className="page">
-       <p>Gender:Male</p>
-          <p>Address: Nairobi,Kenya</p>
+       
+        
+            <div className='appointmentcontainer'>
+              <section className="nav">
+                
+              </section>
+        
+              <section id="works">
+                <div className="row">
+                  <div className="column">
+                  <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
+    <h2 id='portalmsg2'>Welcome to your appointments page!</h2>
+                  </div>
+                </div>
+              </section>
+        
+              <section className="appointment">
+                <div className="card-container">
+                  {appoint.map(blog => createCard(blog))}
+                </div>
+              </section>
+        
+            </div>
+         
+      )}{currentPage === 'page3' && (
+       
+        <div className='appointmentcontainer'>
+          <section className="nav">
+            
+          </section>
+    
+          <section id="works">
+            <div className="row">
+              <div className="column">
+              <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
+<h2 id='portalmsg2'>Welcome to your medication folio!</h2>
+              </div>
+            </div>
+          </section>
+    
+          <section className="appointment">
+            <div className="card-container">
+              {medication.map(blog => createCard(blog))}
+            </div>
+          </section>
+    
         </div>
-      )}
+        
+  )}{currentPage === 'page4' && (
+       
+    <div className='appointmentcontainer'>
+         <div className="column">
+                  <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
+    <h2 id='portalmsg2'>Welcome to your records page!</h2>
+                  </div>
+     <div className="records">
+    <h4>Recent Health Records</h4>
+    <table id="recordtable">
+        <tableheader>
+        <th className='recorddate'>Time and Date</th>
+        <th className='recordcondition'>Condition</th>
+        <th className='recordmedic'>Medic ID</th>
+        </tableheader>
+        <div id='patientrecord'>
+        <tr className='recorddate'><em>12/02/2023 12:00pm</em></tr>
+        <tr className='recordcondition'><em>Headache</em></tr>
+        <tr className='recordmedic'><em>54321</em></tr>
+        </div>
+        <div id='patientrecord'>
+        <tr className='recorddate'><em>12/02/2023 12:00pm</em></tr>
+        <tr className='recordcondition'><em>Back Pain</em></tr>
+        <tr className='recordmedic'><em>45678</em></tr>
+        </div>
+       <div id='patientrecord'>
+     <h6><em>No more records</em></h6>
+        </div>
+        <div id='patientrecord'>
+     <h6><em>No more records</em></h6>
+        </div>
+    </table>
+
+</div>
+    </div>
+    
+)}
  </div>
         </div> 
     )

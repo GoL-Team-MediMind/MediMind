@@ -1396,12 +1396,14 @@ border: 1px black;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 1%;
+    text-align: center;
 }
-#portalbody h4{
+#portalbody h4,.records h4{
     text-align: left;
     margin: 1rem ;
     font-size: 23px;
 }
+
 tableheader{
     margin-left: 1.5%;
     display: inline-flex;
@@ -1445,6 +1447,8 @@ margin-top: 20%;
     text-align: left;
     margin-left: 1%;
     margin-top: 2%;
+    font-size: 200%;
+    margin-bottom: 8%;
 }
 #portalbody table{
     margin-bottom: 3%;
@@ -1457,7 +1461,68 @@ margin-top: 20%;
     margin-right: 4%;
     
 }
-/* #portalnav li:hover{
+#portalnav li:hover{
     background-color: rgba(185, 192, 189, 0.644);
     
-} */
+}
+.card{
+    width: 40%;
+    border: 1px  rgb(102, 97, 97);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 20px;
+    margin: 1rem;
+    transition: 0.5s;
+}
+.appointmentcontainer{
+    width: 100%;
+    line-break: 1rem;
+    padding-top: 7%;
+    border-left: 1px rgb(102, 97, 97);
+    box-shadow: -4px 0 5px -5px rgba(0, 0, 0, 0.5);
+    padding-bottom: 10%;
+    width: 70%;
+}
+.card h3{
+    font-size: 25px;
+  
+    font-weight: bold;
+}
+.uppercard{
+    background-color: #0078D3;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.card h4{
+    font-weight: 500;
+    font-size: smaller;
+}
+.lowercard{
+    padding: 1rem;
+}
+.lowercard button{
+    margin-left: 70%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    background-color:#FA3030;
+    font-size: 8px;
+    font-weight: 550;
+    width: 30%;
+    color: white;
+}
+.lowercard button:hover{
+    border: 1px solid #FA3030;
+    background:none;
+    color: #FA3030;
+}
+.appointment{
+    margin-top: 5%;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+#oddnav{
+    background-color:rgba(185, 192, 189, 0.644);
+}
