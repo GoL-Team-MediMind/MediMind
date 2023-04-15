@@ -16,6 +16,9 @@ import Nextofkin from './components/SignUp/patientReg/nextofkin';
 import Passport from './components/SignUp/patientReg/passport';
 import Signupconfirmation from './components/SignUp/patientReg/signupconfirmation';
 import Patientdashboard from "./components/Dashboard/patientdashboard/patientdashboard";
+import About from './components/About/about';
+import Service from './components/Service/service';
+
 const App = ( ) => {
   return (
     <BrowserRouter>
@@ -35,6 +38,8 @@ const App = ( ) => {
     <Route path='/passport' element={<Passport  /> } />
     <Route path='/signupconfirmation' element={<Signupconfirmation  /> } />
     <Route path='/patientdashboard' element={<Patientdashboard  /> } />
+    <Route path='/aboutus' element={<About  /> } />
+    <Route path='/service' element={<Service  /> } />
 
    {/* <Header /> */}
     {/* <Admin  /> */}

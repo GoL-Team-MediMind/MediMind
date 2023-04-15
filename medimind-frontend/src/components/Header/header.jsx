@@ -26,10 +26,19 @@ const Header = ( ) => {
                 </a>
 
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                                    <li>
+                    <NavLink to="/aboutus">About Us
+                    </NavLink></li>
+                    <li>
+                    <NavLink to="/service">Services
+                    </NavLink></li>
+                    <li>
+                    <NavLink to="/aboutus">Team
+                    </NavLink></li>
+                    <li>
+                    <NavLink to="/aboutus">Contact Us
+                    </NavLink></li>
+
                 </ul>
                 <div className="login" id="adminpanel">
 
@@ -48,7 +57,7 @@ const Header = ( ) => {
                         good health and wellbeing.</p>
                     <NavLink to="/medic"><button class="b1"><span>Medic</span></button></NavLink>
                     <NavLink to="/patient"><button class="b2"><span>Patient</span></button></NavLink>
-                   
+
 
                 </div>
                 <div className="ryt">
