@@ -2,7 +2,7 @@
   "name": "medimind-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mediminds-medimind.vercel.app/",
+  "homepage": "https://https://medi-mind-fe-25x2.vercel.app/",
   "dependencies": {
     "@chakra-ui/react": "^2.5.5",
     "@mui/material": "^5.11.16",
