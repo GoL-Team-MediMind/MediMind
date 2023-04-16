@@ -23,7 +23,7 @@ import Medicedit from './components/Dashboard/medicedit';
 
 const App = ( ) => {
   return (
-    <BrowserRouter basename='/MediMind-FE'>
+    <BrowserRouter>
     <div className="App">
     <Routes>
     <Route index element={<Header />} />
