@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
-import point from '../../../assets/point.png'
-import pointblue from '../../../assets/pointblue.png'
+import point from '../../assets/point.png'
+import pointblue from '../../assets/pointblue.png'
 import { NavLink } from 'react-router-dom'; 
 const appoint = [
     [
@@ -39,6 +39,7 @@ const appoint = [
       'Virtual'
     ]
   ];
+
 const medication=[
     ["Paracetamol",
     "1/ day",
@@ -53,7 +54,7 @@ const medication=[
        <div className="lowercard"> <h4>{name}</h4>
         <p>{department}</p>
         <p>{location}</p>
-        <button>Cancel Appointment</button></div>
+        </div>
       </div>
     );
   }
@@ -68,7 +69,7 @@ const medication=[
       </div>
     );
   }
-const Patientdashboard=()=>{
+const MedicEdit=()=>{
 
     const [currentPage, setCurrentPage] = useState('page1');
     let page1temp;
@@ -101,6 +102,15 @@ page4temp=""
     const handleButtonClick = (page) => {
       setCurrentPage(page);
     };
+    const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+    const openPopup = () => {
+      setIsPopupVisible(true);
+    }
+  
+    const closePopup = () => {
+      setIsPopupVisible(false);
+    }
     return(
         <div className="regcontainer">
  
@@ -131,13 +141,24 @@ page4temp=""
           onClick={() => handleButtonClick('page3')}>Medications</li>
         <li  id={page4temp} className={currentPage === 'page4' ? 'active' : ''}
           onClick={() => handleButtonClick('page4')}>Health Records</li>
-        
+        <div className="floating-button">
+      <button className="main-button">+</button>
+      <div className="expanded-buttons">
+        <button className={currentPage === 'page5' ? 'active' : ''}
+          onClick={() => handleButtonClick('page5')}>Add appointment</button>
+        <button className={currentPage === 'page6' ? 'active' : ''}
+          onClick={() => handleButtonClick('page6')}>Add medication</button>
+         <button className={currentPage === 'page7' ? 'active' : ''}
+          onClick={() => handleButtonClick('page7')}>Add record</button>
+      </div>
+    </div>
     </ul>
 </div>
 {currentPage === 'page1' && (
 <div className="patientregistrationform" id="portalbody">
-    <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
-    <h2 id='portalmsg2'>Welcome to your patients portal!</h2>
+
+    <h3 id="portalmsg">Hello,</h3>
+    <h2 id='portalmsg2'>Welcome to <span><em>Jane</em></span> 's portal</h2>
     <div className="appandmed">
     <div className="appointments">
         <h4>Upcoming appointments</h4>
@@ -172,7 +193,7 @@ page4temp=""
             <button disabled>Upcoming</button>
         </div>
         </div>
-        <button id='morebutton' onClick={() => handleButtonClick('page2')}>View all appointments</button>
+        <button  onClick={() => handleButtonClick('page2')} id='morebutton' >View all appointments</button>
     </div>
     <div className="medications">
     <h4>Current medications</h4>
@@ -202,7 +223,7 @@ page4temp=""
         </div>
         
         </div>
-        <button id='morebutton' onClick={() => handleButtonClick('page3')}>View all medication</button>
+        <button id='morebutton' onClick={() => handleButtonClick('page3')}>View all medications</button>
         </div> 
 </div>
 <div className="records">
@@ -239,6 +260,7 @@ page4temp=""
        
         
             <div className='appointmentcontainer'>
+                  
               <section className="nav">
                 
               </section>
@@ -246,8 +268,8 @@ page4temp=""
               <section id="works">
                 <div className="row">
                   <div className="column">
-                  <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
-    <h2 id='portalmsg2'>Welcome to your appointments page!</h2>
+                  <h3 id="portalmsg">Hello,</h3>
+    <h2 id='portalmsg2'>Welcome to <span><em>Jane</em></span> 's portal</h2>
                   </div>
                 </div>
               </section>
@@ -270,8 +292,8 @@ page4temp=""
           <section id="works">
             <div className="row">
               <div className="column">
-              <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
-<h2 id='portalmsg2'>Welcome to your medication folio!</h2>
+              <h3 id="portalmsg">Hello,</h3>
+    <h2 id='portalmsg2'>Welcome to <span><em>Jane</em></span> 's portal</h2>
               </div>
             </div>
           </section>
@@ -287,9 +309,10 @@ page4temp=""
   )}{currentPage === 'page4' && (
        
     <div className='appointmentcontainer'>
+        
          <div className="column">
-                  <h3 id="portalmsg">Hello,    <span><em>Jane</em></span></h3>
-    <h2 id='portalmsg2'>Welcome to your records page!</h2>
+         <h3 id="portalmsg">Hello,</h3>
+    <h2 id='portalmsg2'>Welcome to <span><em>Jane</em></span> 's portal</h2>
                   </div>
      <div className="records">
     <h4>Recent Health Records</h4>
@@ -321,8 +344,91 @@ page4temp=""
     </div>
     
 )}
+{currentPage === 'page5' && (
+       
+       <div className='appointmentcontainer'>
+           
+            <div className="column">
+                     <h3 id="portalmsg" className="addstitle">Add appointment</h3>
+                     <div className="appointmentform">
+                        <form action="">
+                            <input type="text" placeholder='Department'/><br />
+                            <input type="date"/><br />
+                            <input type="time" /><br />
+                            <select name="location">
+            <option value="" disabled selected>Mode</option>
+            <option value="">Virtual</option>
+             <option value="">In-person</option>
+            </select><br />
+            <input type="text" placeholder='location' disabled /><br />
+            <textarea name="" id="" cols="30" rows="10" placeholder='Description'></textarea>
+<button>Add</button>
+<button id='clear'>Cancel</button>
+                        </form>
+                     </div>
+                     </div>
+
+       </div>
+       
+   )}
+   {currentPage === 'page6' && (
+       
+       <div className='appointmentcontainer'>
+           
+            <div className="column">
+                     <h3 id="portalmsg" className="addstitle">Add medication</h3>
+                     <div className="appointmentform">
+                        <form action="">
+                            <input type="text" placeholder='Name'/><br />
+                            <input type="text" placeholder='Reason'/><br />
+                            <select name="Dose">
+            <option value="" disabled selected>Times per day</option>
+            <option value="">1</option>
+             <option value="">2</option>
+             <option value="">3</option>
+             <option value="">4</option>
+             <option value="">5+</option>
+            </select><br/>
+            <textarea name="" id="" cols="30" rows="10" placeholder='Description'></textarea>
+<button>Add</button>
+<button id='clear'>Cancel</button>
+                        </form>
+                     </div>
+                     </div>
+
+       </div>
+       
+   )}
+   {currentPage === 'page7' && (
+       
+       <div className='appointmentcontainer'>
+           
+            <div className="column">
+                     <h3 id="portalmsg" className="addstitle">Add record</h3>
+                     <div className="appointmentform">
+                        <form action="">
+                            <input type="text" placeholder='Condition'/><br />
+                            <input type="text" placeholder='Reason'/><br />
+                            <select name="Status">
+            <option value="" disabled selected>Status</option>
+            <option value="">Severe</option>
+             <option value="">Moderate</option>
+
+            </select><br/>
+            <textarea name="" id="" cols="30" rows="10" placeholder='Description'></textarea><br />
+            <textarea name="" id="caution" cols="30" rows="10" placeholder='Caution'></textarea>
+<button>Add</button>
+<button id='clear'>Cancel</button>
+                        </form>
+                     </div>
+                     </div>
+
+       </div>
+       
+   )}
+   
  </div>
         </div> 
     )
 }
-export default Patientdashboard;
+export default MedicEdit;

@@ -19,6 +19,7 @@ import About from './components/About/about';
 import Service from './components/Service/service';
 import Blog from "./components/Blog/blog"
 import Contact from './components/Contact/contact';
+import Medicedit from './components/Dashboard/medicedit';
 
 const App = ( ) => {
   return (
@@ -43,6 +44,7 @@ const App = ( ) => {
     <Route path='/service' element={<Service  /> } />
     <Route path='/team' element={<Blog  /> } />
     <Route path='/contact' element={<Contact  /> } />
+    <Route path='/medicedit' element={<Medicedit  /> } />
    {/* <Header /> */}
     {/* <Admin  /> */}
     {/* <Patient  /> */}
